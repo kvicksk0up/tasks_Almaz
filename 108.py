@@ -1,0 +1,6 @@
+b=input('Введите имя: ')
+file=open('Name.txt','a')
+file.write('New user:\n'+ b)
+file.close()
+file=open('Name.txt','r')
+print(file.read())
