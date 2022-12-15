@@ -9,7 +9,7 @@ for x in cursor.fetchall():
     
 location = input("Enter a place of birth: ")
 print()
-cursor.execute("""SELECT Books.Title,  Books.DatePublished, Books.AuthorFROM Books,Authors WHERE Authors.Name = Books.Author AND Authors.PlaceofBirth = ? """,[location])
+cursor.execute("""SELECT Books.Title,  Books.DataPublished, Books.AuthorFROM Books,Authors WHERE Authors.Name = Books.Author AND Authors.PlaceofBirth = ? """,[location])
 for x in cursor.fetchall():
     print(x)
 
